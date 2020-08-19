@@ -300,28 +300,144 @@ class _WalletHomeState extends State<WalletHome> {
                               SizedBox(
                                 width: _width * 0.04,
                               ),
-                              _users('assets/images/users/anna.jpeg', 'Anna',
-                                  'varela'),
+                              _users(
+                                'assets/images/users/anna.jpeg',
+                                'Anna',
+                                'varela',
+                              ),
                               SizedBox(
                                 width: _width * 0.04,
                               ),
-                              _users('assets/images/users/gillian.jpeg',
-                                  'Gillian', 'varela'),
-                              SizedBox(
-                                width: _width * 0.04,
+                              _users(
+                                'assets/images/users/gillian.jpeg',
+                                'Gillian',
+                                'varela',
                               ),
-                              _users('assets/images/users/judith.jpeg',
-                                  'Judith', 'varela'),
-                              SizedBox(
-                                width: _width * 0.04,
-                              ),
-                              _users('assets/images/users/judith.jpeg',
-                                  'Judith', 'varela'),
                               SizedBox(
                                 width: _width * 0.04,
                               ),
                               _users('assets/images/users/judith.jpeg',
                                   'Judith', 'varela'),
+                              SizedBox(
+                                width: _width * 0.04,
+                              ),
+                              _users(
+                                'assets/images/users/judith.jpeg',
+                                'Judith',
+                                'varela',
+                              ),
+                              SizedBox(
+                                width: _width * 0.04,
+                              ),
+                              _users(
+                                'assets/images/users/judith.jpeg',
+                                'Judith',
+                                'varela',
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        height: _height * 0.02,
+                      ),
+                      // Sixth Main Child
+                      Container(
+                        margin: EdgeInsets.only(
+                          left: _width * 0.02,
+                        ),
+                        child: Row(
+                          children: <Widget>[
+                            Container(
+                              child: Text(
+                                'All',
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 17,
+                                  fontWeight: FontWeight.w500,
+                                ),
+                              ),
+                            ),
+                            SizedBox(
+                              width: _width * 0.04,
+                            ),
+                            Container(
+                              child: Text(
+                                'Received',
+                                style: TextStyle(
+                                  color: Colors.grey,
+                                  fontSize: 17,
+                                  fontWeight: FontWeight.w500,
+                                ),
+                              ),
+                            ),
+                            SizedBox(
+                              width: _width * 0.04,
+                            ),
+                            Container(
+                              child: Text(
+                                'Sent',
+                                style: TextStyle(
+                                  color: Colors.grey,
+                                  fontSize: 17,
+                                  fontWeight: FontWeight.w500,
+                                ),
+                              ),
+                            ),
+                            Expanded(
+                              child: Align(
+                                alignment: Alignment.topRight,
+                                child: Icon(
+                                  Icons.keyboard_arrow_right,
+                                  color: Colors.grey,
+                                  size: 30,
+                                ),
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        height: _height * 0.02,
+                      ),
+                      // Seventh Main Child
+                      Container(
+                        margin: EdgeInsets.only(
+                          left: _width * 0.02,
+                        ),
+                        child: Text(
+                          '23 july 2019',
+                          style: TextStyle(color: Colors.grey),
+                        ),
+                      ),
+                      SizedBox(
+                        height: _height * 0.02,
+                      ),
+                      // Eigth Main Child
+                      Container(
+                        margin: EdgeInsets.only(
+                          left: _width * 0.02,
+                        ),
+                        child: SingleChildScrollView(
+                          scrollDirection: Axis.vertical,
+                          child: Column(
+                            children: <Widget>[
+                              Container(
+                                child: Row(
+                                  children: <Widget>[
+                                    Card(
+                                      child: Container(
+                                        height: _height * 0.06,
+                                        width: _width * 0.12,
+                                        decoration: BoxDecoration(
+                                          shape: BoxShape.circle,
+                                          color: Colors.yellow,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              )
                             ],
                           ),
                         ),
@@ -344,7 +460,10 @@ class _WalletHomeState extends State<WalletHome> {
         child: Text(
           value,
           style: TextStyle(
-              fontSize: 24, color: Colors.black, fontWeight: FontWeight.bold),
+            fontSize: 24,
+            color: Colors.black,
+            fontWeight: FontWeight.bold,
+          ),
         ),
       );
 
